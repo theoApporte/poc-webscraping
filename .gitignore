@@ -1,0 +1,41 @@
+# Ambiente virtual
+venv/
+ENV/
+env/
+.venv/
+
+# Arquivos de cache Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdm.toml
+*.pdm.lock
+
+# Configurações de IDEs/editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Arquivos de log e temporários
+*.log
+*.tmp
+*.bak
+
+# Arquivos do Jupyter Notebook
+.ipynb_checkpoints/
+
+# Cache de pacotes
+*.egg-info/
+.eggs/
+dist/
+build/
+pip-wheel-metadata/
+
+# Kestra local (caso tenha saída gerada no projeto)
+.kestra/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db

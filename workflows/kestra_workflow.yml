@@ -1,0 +1,15 @@
+id: poc-webscraping
+namespace: scraping
+
+tasks:
+  - id: clone
+    type: io.kestra.plugin.git.Clone
+    url: "https://github.com/sua-org/prova_poc_webscraping.git"
+    branch: main
+
+  - id: run_scraper
+    type: io.kestra.plugin.scripts.python.Commands
+    commands:
+      - python agent/scraper.py
+    docker:
+      image: python:3.11
