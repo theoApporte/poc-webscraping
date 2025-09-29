@@ -13,7 +13,7 @@ def scrape_edital(url: str):
     return editais
 
 if __name__ == "__main__":
-    url = "https://www.exemplo.gov.br/editais"  # substitua por um site real
+    url = "http://www.fundacaoculturaldecuritiba.com.br/editais/"  # pagina de editais de exemplo
     dados = scrape_edital(url)
     print("Editais encontrados:")
     for d in dados:
